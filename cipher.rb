@@ -1,13 +1,8 @@
-
-
 def caesar_cipher(str, shift) ## Create a function to take in a string of letters and a shift
 
     byte_array = []
-    p byte_array
    
     str.each_byte{|c| byte_array << c }  ##convert letters to ascii 
-
-    p byte_array
     
     shifted_byte_array = byte_array.map {|value| ##For each letter move shift it a specified number of spaces
         if value.between?(65, 90) ## Checking for lowercase letters
